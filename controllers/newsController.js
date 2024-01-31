@@ -40,9 +40,6 @@ exports.dashboard = catchAsyncError(async (req, res) => {
     filteredArray = allNews.filter(
       (item) => !newArr.includes(item._id.toString())
     );
-
-    console.log(allNews.length);
-    console.log(filteredArray.length);
   }
 
   res.send(filteredArray);
